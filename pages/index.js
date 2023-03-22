@@ -83,6 +83,7 @@ function Home() {
 
 //using knightsassets as a callback because want this to run once we know we have knights.
 // Will run on any change to knights 
+// hery
 useEffect(() => {
   checkPower();
 }, [ownedKnightsAssets])
