@@ -1,0 +1,549 @@
+/* Use for fonts - replace url if necessary */
+@font-face {
+    font-family: "Rumblekill";
+    src: url('https://cdn.shopify.com/s/files/1/0562/9689/8695/files/Rumblekill.woff?v=1667322374') format("woff"),
+       url('https://cdn.shopify.com/s/files/1/0562/9689/8695/files/Rumblekill.woff2?v=1667322374') format("woff2");
+  }
+  
+   @font-face {
+    font-family: "A_Goblin_Appears";
+    src: url('https://cdn.shopify.com/s/files/1/0562/9689/8695/files/A_Goblin_Appears.woff?v=1667322374') format("woff"),
+       url('https://cdn.shopify.com/s/files/1/0562/9689/8695/files/A_Goblin_Appears.woff2?v=1667322374') format("woff2");
+  }
+  
+   @font-face {
+    font-family: "PPMori-Regular";
+    src: url('https://cdn.shopify.com/s/files/1/0562/9689/8695/files/PPMori-Regular.woff?v=1667322373') format("woff"),
+       url('https://cdn.shopify.com/s/files/1/0562/9689/8695/files/PPMori-Regular.woff2?v=1667322374') format("woff2");
+  }
+  
+   @font-face {
+    font-family: "PPMori-RegularItalic";
+    src: url('https://cdn.shopify.com/s/files/1/0562/9689/8695/files/PPMori-RegularItalic.woff?v=1667322374') format("woff"),
+       url('https://cdn.shopify.com/s/files/1/0562/9689/8695/files/PPMori-RegularItalic.woff2?v=1667322374') format("woff2");
+  }
+  
+   @font-face {
+    font-family: "PPMori-SemiBoldItalic";
+    src: url('https://cdn.shopify.com/s/files/1/0562/9689/8695/files/PPMori-SemiBoldItalic.woff?v=1667322374') format("woff"),
+       url('https://cdn.shopify.com/s/files/1/0562/9689/8695/files/PPMori-SemiBoldItalic.woff2?v=1667322374') format("woff2");
+  }
+  
+   @font-face {
+    font-family: "PPMori-Extralight";
+    src: url('https://cdn.shopify.com/s/files/1/0562/9689/8695/files/PPMori-Extralight.woff?v=1667322374') format("woff"),
+       url('https://cdn.shopify.com/s/files/1/0562/9689/8695/files/PPMori-Extralight.woff2?v=1667322374') format("woff2");
+  }
+  
+   @font-face {
+    font-family: "PPMori-ExtralightItalic";
+    src: url('https://cdn.shopify.com/s/files/1/0562/9689/8695/files/PPMori-ExtralightItalic.woff?v=1667322374') format("woff"),
+       url('https://cdn.shopify.com/s/files/1/0562/9689/8695/files/PPMori-ExtralightItalic.woff2?v=1667322374') format("woff2");
+  }
+  
+   @font-face {
+    font-family: "PPMori-SemiBold";
+    src: url('https://cdn.shopify.com/s/files/1/0562/9689/8695/files/PPMori-SemiBold.woff?v=1667322374') format("woff"),
+       url('https://cdn.shopify.com/s/files/1/0562/9689/8695/files/PPMori-SemiBold.woff2?v=1667322374') format("woff2");
+  }
+      
+  .page-width--narrow {max-width: 3221f20px!important;}
+  .rte {margin:  0 auto; text-align: center;}
+  .rte img {margin: 0 auto!important;}
+  #MainContent .shopify-section:first-of-type section {padding-top: 0px;}
+  #shopify-section-template--14686962417799__main>section>div>div>div:first-child {display: none;}
+  #shopify-section-template--14686962417799__main .bg-scheme-background {background-color: #221f20!important;}
+  
+  html {background: #221f20;}
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  img.knights-arcade-frame {
+    max-width: 100%;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .knights-arcade-frame.mobile {display: none;}
+  
+  .knights-master-slay-frame {
+      position: relative;
+      margin-top: 0px!important;
+    background-color: #221f20;
+  }
+  
+  .knights-master-slay-frame .box {
+    position: absolute;
+    width: calc(1.6vw + 10px); height: calc(1.6vw + 10px);
+    border-radius: 50%;
+    background-color: #fff;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    /* COMMENT these 2 lines out to show the containers */
+    opacity: 0;
+    color: transparent;
+  }
+  
+  main#MainContent #shopify-section-template--14686962417799__main .section-x-padding {padding: 0px!important;}
+  
+  .wallet-connect {
+    text-decoration: none!important;
+      font-family: A_Goblin_Appears;
+      background-color: #221f20;
+      color: #FFCF22;
+      text-shadow: 4px 0 0 #d2302b, 0 -4px 0 #d2302b, 0 4px 0 #d2302b, -4px 0 0 #d2302b;
+      font-size: 25px;
+      line-height: 52px;
+      text-align: center;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 400px;
+  }
+  
+  .wallet-viewport {background-color: #221f20!important;}
+  
+  .box.viewport.wallet-viewport.slay-stake,
+  .box.viewport.wallet-viewport.staking {display: block;}
+
+  .box.viewport.wallet-viewport.slay-video {
+      top: 32.3%!important;
+      left: 31.2%!important;
+      width: calc(38.5vw + 10px)!important;
+      height: calc(21.8vw + 10px)!important;
+      border-radius: 5px;}
+  
+  .box.viewport.wallet-viewport.staking {background-color: #E8E3D6!important;}
+  .box.viewport {border-radius: 5px!Important;}
+  
+  
+  img.knights-arcade-frame.connect-wallet-img {
+    width: 90%!important;
+  }
+  
+  img.knights-arcade-frame.stake-border {
+    box-shadow: 0px 0 70px #4d8f5a;
+      width: 100%!important;
+      max-width: 59.4%;
+  }
+  
+  img.knights-arcade-frame.slay-border {
+    box-shadow: 0px 0 70px #00AFDD;
+    width: 100%!important;
+    max-width: 59.4%;
+  }
+  
+  img.knights-arcade-frame.or-seperator {
+      margin-top: 4%!important;
+      margin-bottom: 5.25%!important;
+      max-width: 59.4%;
+      width: 100%!important;
+  }
+  
+  .knights-slay-row {display: none;}
+  
+  
+  a.knights-console-click.wallet-connect-image.stake-knight,
+  .box.viewport.wallet-viewport.slay-stake,
+  .box.viewport.wallet-viewport.staking,
+  .box.viewport.wallet-viewport
+   {
+    opacity: inherit!important;
+    color: inherit!important;
+    font-size: inherit!important;
+  }
+  
+  /***** fullscreen ********/ 
+  @media screen and (min-width: 2200px) {
+  
+    .box.viewport.wallet-viewport.staking {
+      top: 29%!important;
+      left: 30.4%!important;
+      width: calc(39.9vw + 10px)!important;
+      height: calc(24.9vw + 10px)!important;
+    }
+  
+    /* 1st row staking */
+  
+    .knights-console-row.first-row-container {
+      border-bottom: 2px solid #000;
+      display: flex;
+  }
+  
+    .knights-arcade-text-left-master {width: 45.8%; border-right: 2px solid #000;}
+    .knights-arcade-text-right-master {width: 54.2%;}
+  
+    .knights-arcade-frame.your-staked {
+        width: 77%;
+        margin: 0 auto;
+        padding-top: 17.5%;
+    }
+  
+    .knights-arcade-staked-header {
+      color: #221f20;
+      font-family: "Rumblekill";
+      font-style: inherit;
+      font-size: 3.4vw;
+      line-height: 2.84vw;
+      text-align: left;
+    }
+  
+    .knights-arcade-staked-subtext {
+      font-family: PPMori-Regular;
+      color: #000000;
+      font-size: .57vw;
+      line-height: .73vw;
+      text-align: left;
+    }
+  
+    .knights-arcade-frame.knight-info {
+      width: 42%; 
+      float: left; 
+      text-align: left;
+      padding: 0px 3% 0px 6%;
+    }
+  
+    .knight-image-display-container {width: 58%; float: left;}
+  
+    .knights-arcade-knight-info-header {
+      font-family: alexander-quill,sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      color: #000000;
+      font-size: .76vw;
+    }
+  
+    .knights-arcade-knight-info-subtext,
+    .knights-arcade-knight-info-info {
+      font-family: PPMori-SemiBold;
+      color: #000000;
+      font-size: .50vw;
+      line-height: .58vw;
+    }
+  
+    .knight-profile-picture {
+      max-width: 64.3%!important;
+      mix-blend-mode: multiply;
+    }
+  
+    .knight-level-text {
+      border: 2px solid #000;
+      border-radius: 100%;
+      text-align: center;
+      height: 3.69vw;
+      width: 3.69vw;
+      text-align: center;
+      background-color: #EBB800;
+      box-shadow: 0px 0 15px #ebb800;
+      position: absolute;
+    }
+  
+    .knight-level-text.words,
+    .knight-level-text.number {
+      font-family: A_Goblin_Appears;
+      text-align: center;
+      border: none!important;
+      border-radius: inherit!important;
+      background-color: transparent!important;
+      box-shadow: none!important;
+      display: block;
+      height: auto;
+      position: relative;
+    }
+  
+    .knight-level-text.words {
+      font-size: .45vw;
+      line-height: .95vw;
+      margin-top: 20%;
+    }
+  
+    .knight-level-text.number {
+      font-size: .82vw;
+      line-height: 1.17vw;
+    }
+  
+  
+    /* 2nd row staking */
+  
+  
+  
+  
+  
+    /* end staking */
+  
+  
+  
+  
+  
+    .knights-master-slay-frame .box {
+        width: calc(1.9vw + 10px)!important;
+        height: calc(1.4vw + 10px)!important;
+    }
+  
+    img.knights-arcade-frame {width: 70%!important;}
+  
+    /*viewport */
+    .knights-master-slay-frame .box.viewport {
+      top: 32.3%!important;
+      left: 31.2%!important;
+      width: calc(38.5vw + 10px)!important;
+      height: calc(21.8vw + 10px)!important;
+      border-radius: 5px;
+    }
+  
+  
+    /* button 1*/
+    .knights-master-slay-frame .box.home {
+      top: 85.8%;
+      left: 26.2%;
+    }
+  
+    /* button 2*/
+    .knights-master-slay-frame .box.knights {
+      top: 84.2%;
+      left: 29.3%
+    }
+  
+    /* button 3*/
+    .knights-master-slay-frame .box.about {
+      top: 85.8%;
+      left: 72.4%;
+    }
+  
+    /* button 4*/
+    .knights-master-slay-frame .box.artifacts {
+      top: 84.4%;
+      left: 69.1%;
+    }
+  
+    /* button 5*/
+    .knights-master-slay-frame .box.slay {
+      top: 84.9%;
+      left: 37.7%;
+      width: calc(3.9vw + 10px)!important;
+      height: calc(2.6vw + 10px)!important;
+    }
+  
+    /* button 6*/
+    .knights-master-slay-frame .box.stake {
+      top: 84.5%;
+      left: 58.8%;
+      width: calc(3.9vw + 10px)!important;
+      height: calc(2.6vw + 10px)!important;
+    }
+  }
+  
+  
+  /* Desktop to laptop */
+  @media screen and (max-width: 2199px) and (min-width: 1024px) {
+  
+    a.knights-console-click.wallet-connect-image.stake-knight {
+      margin-top: 2%;
+      display: block;
+    }
+  
+    img.knights-arcade-frame.or-seperator {
+      margin-top: 3%!important;
+      margin-bottom: 4.25%!important;
+      max-width: 59.4%;
+      width: 100%!important;
+    }
+  
+    .knights-master-slay-frame .box {
+      width: calc(2.3vw + 10px);
+      height: calc(1.5vw + 10px);
+    }
+  
+    /*viewport */
+    .knights-master-slay-frame .box.viewport {
+      top: 31.3%;
+      left: 23.95%;
+      width: calc(52.9vw + 10px);
+      height: calc(31.2vw + 10px);
+    }
+  
+  
+    /* button 1*/
+    .knights-master-slay-frame .box.home {
+      top: 86.2%;
+      left: 16.3%;
+    }
+  
+    /* button 2*/
+    .knights-master-slay-frame .box.knights {
+      top: 84.3%;
+      left: 20.7%;
+    }
+  
+    /* button 3*/
+    .knights-master-slay-frame .box.about {
+      top: 86.1%;
+      left: 82.2%;
+    }
+  
+    /* button 4*/
+    .knights-master-slay-frame .box.artifacts {
+      top: 84.4%;
+      left: 77.5%;
+    }
+  
+    /* button 5*/
+    .knights-master-slay-frame .box.slay {
+      top: 85%;
+      left: 32.8%;
+      width: calc(5vw + 10px);
+      height: calc(3.1vw + 10px);
+    }
+  
+    /* button 6*/
+    .knights-master-slay-frame .box.stake {
+      top: 84.8%;
+      left: 62.8%;
+      width: calc(5vw + 10px);
+      height: calc(3.1vw + 10px);
+    }
+  
+  }
+  
+  
+  /* Mobile styling */
+  
+  @media screen and (max-width: 1023px) and (min-width: 0px) {
+  
+    .knights-master-slay-frame .box {font-size: .5px!important;}
+  
+    .knights-slay-row {
+      display: block!important;
+      border-bottom: 3px solid #EBB800;
+      border-top: 3px solid #EBB800;
+    }
+  
+    .knights-slay-row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  
+    .knights-slay-column {
+      float: left;
+      width: 25%;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .knights-slay-column h2 {
+      color: #FFCF22;
+      font-family: A_Goblin_Appears;
+      font-size: 12px;
+      line-height: 20px;
+    }
+  
+    .knights-mobile-click-slay {
+      text-decoration: none!important;
+      font-family: A_Goblin_Appears;
+      font-size: 12px;
+      line-height: 20px;
+      color: #FFCF22;
+    }
+    
+    .knights-arcade-frame {display: none!important;}
+    .knights-arcade-frame.mobile {display: block!important;}
+  
+    .knights-master-slay-frame .box {
+      width: calc(2.3vw + 10px);
+      height: calc(1.5vw + 10px);
+    }
+  
+    /*viewport */
+    .knights-master-slay-frame .box.viewport {
+      top: 16.3%;
+      left: 11.95%;
+      width: calc(74.9vw + 10px);
+      height: calc(42.2vw + 10px);
+    }
+  
+  
+    /* button 1*/
+    .knights-master-slay-frame .box.home {
+      top: 87.2%;
+      left: 2.2%;
+    }
+  
+    /* button 2*/
+    .knights-master-slay-frame .box.knights {
+      top: 84.8%;
+      left: 8.4%;
+    }
+  
+    /* button 3*/
+    .knights-master-slay-frame .box.about {
+      top: 87.3%;
+      left: 94.5%;
+    }
+  
+    /* button 4*/
+    .knights-master-slay-frame .box.artifacts {
+      top: 84.9%;
+      left: 88%;
+    }
+  
+    /* button 5*/
+    .knights-master-slay-frame .box.slay {
+      top: 85.7%;
+      left: 23.8%;
+      width: calc(7vw + 10px);
+      height: calc(4.1vw + 10px);
+    }
+  
+    /* button 6*/
+    .knights-master-slay-frame .box.stake {
+      top: 85.5%;
+      left: 67.9%;
+      width: calc(7vw + 10px);
+      height: calc(4.1vw + 10px);
+    }
+  
+    img.knights-arcade-frame.stake-border {box-shadow: 0px 0 25px #4d8f5a;}
+    img.knights-arcade-frame.slay-border {box-shadow: 0px 0 25px #00afdd;}
+  
+    a.knights-console-click.wallet-connect-image.stake-knight {
+      margin-top: 3%;
+      display: block;
+    }
+  
+  }
+  
+  @media screen and (max-width: 540px) and (min-width: 0px) {
+  
+    .knights-mobile-click-slay {font-size: 9px!important;}
+  
+    .knights-slay-column.home-menu {
+      width: 17%!important;
+      padding-left: 10px;
+    }
+  
+    .knights-slay-column.knights-menu {
+      width: 28%!important;
+      padding-left: 5px;
+      padding-right: 0px;
+    }
+  
+    .knights-slay-column.artifacts-menu {
+      width: 30%!important;
+      padding-left: 0px;
+      padding-right: 5px;
+    }
+  
+    .knights-slay-column.about-menu {
+      padding-left: 0px;
+      width: 25%!important;
+    }
+  
+  }
