@@ -95,16 +95,30 @@ const checkPower = async function () {
     let artifactPower = 0;
     let stakinglevel = 0;
     // count the knights, and artifacts, and get their power total
+
+
+    //this is greek
+    //on greek, samurai can only do 25% of the damage they did on old game
+    //and on this greek game, we want everyone to do HALF the damage they did on samurai, bc want game TWICE HARDER
+
     for(const nft of ownedKnightsAssets)
     {
       //grab staking level from staking contract,
       stakinglevel = 0;
       stakinglevel = await stakeContract.methods.getStakingLevel(nft.tokenId).call()
 
+
+      if(nft.tokenId < 1112)
+      {
       knightsPower = knightsPower + parseInt(stakinglevel)
-      //power starts at 0. each knight has a default staking level of 1, so 0.5 + staking level = percentage to slay per warrior
-      //knightsPower = knightsPower + 0.5 + stakinglevel;
-  
+      knightsPower = knightsPower * 0.25;
+      }
+      else
+      {
+      knightsPower = knightsPower + parseInt(stakinglevel)
+      knightsPower = knightsPower * 0.5;
+      }
+      
     }
     
     if(ownedArtifactAssets.length >= 1 && ownedArtifactAssets[0] !== null)
@@ -115,27 +129,27 @@ const checkPower = async function () {
 
         if(raritylevel == "Common")
         {
-          raritylevel += 2.5;
+          raritylevel += 1.25;
         }
         else if(raritylevel == "Uncommon")
         {
-          raritylevel += 5;
+          raritylevel += 2.5;
         }
         else if(raritylevel == "Rare")
         {
-          raritylevel += 10;
+          raritylevel += 5;
         }
         else if(raritylevel == "Epic")
         {
-          raritylevel += 20;
+          raritylevel += 10;
         }
         else if(raritylevel == "Legendary")
         {
-          raritylevel += 100;
+          raritylevel += 50;
         }
         else if(raritylevel == "Ashigaru")
         {
-          raritylevel += 35;
+          raritylevel += 17.5;
         }
         artifactPower += raritylevel;
       } 
@@ -161,7 +175,7 @@ const mintWin = async () => {
 
 
             //encode method using signature generated above
-            const method1 = slayContract.methods.mintReward(address,1,signature).encodeABI();
+            const method1 = slayContract.methods.mintReward(address,2,signature).encodeABI();
             const transactionParameters = {
               to: SLAY_ADDRESS, // Required except during contract publications.
               from: window.ethereum.selectedAddress, // must match user's active address.
